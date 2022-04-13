@@ -1,0 +1,49 @@
+@import 'src/assets/styles/_colors.scss';
+
+.card {
+    max-width: 250px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 $cor-box-shadow-padrao;
+    border-radius: 5px 5px;
+    padding: 16px;
+    .card-description {
+        color: $cor-padrao-textos;
+        margin: 20px 10px;
+    }
+    .actions {
+        border-top: 1px solid $cor-padrao-cinza-claro;
+   
+        color: $cor-padrao-textos;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+                 background-color: $cor-padrao-cinza-claro-2;
+                 color: $cor-padrao-sucesso;
+                 margin-bottom: 10px;
+                cursor: pointer;
+        }
+        a:nth-child(2){
+            color: blue;
+        }
+        a:nth-child(3){
+            color: red;
+        }
+    }
+}
+
+
+
+.details {
+    padding-left: 16px;
+}
+
+.card:hover {
+    box-shadow: 10px 5px 5px $cor-box-shadow-padrao;
+}
